@@ -1,0 +1,216 @@
+/* common fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* common css style */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #FDFDFD;
+}
+
+
+/* banner */
+.banner{
+    background-color: #2d25a0;
+    width: 100%;
+    height: 677px;
+    display: grid;
+    grid-gap:30px;
+    margin-bottom: 70px;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.banner-half{
+    align-items: center;
+}
+.banner-half h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 27px;
+  }
+  .banner-half a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    background-color: #e02c6d;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 48px 10px 24px;
+  }
+.arrow{
+    position: absolute;
+    color: white;
+    margin-left: 12px;
+    width: 18px;
+    height: 25px;
+}
+.kick img{
+    width: 556px;
+    height: 438px;
+    margin-right: 20px;
+}
+.kick img:hover {
+    transform: scale(1.5);
+    transition: transform 1.5s;
+  }
+
+
+  /* main */
+  main{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* top players */
+.top-players{
+    display: grid;
+    grid-gap:30px;
+    margin-top: 20px;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 70px;
+}
+
+.player {
+    width: 300px;
+    height: 474px;
+    align-items: center;
+    background: #fff;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.3);
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 15px;
+    padding: 15px;
+}
+.player img{
+    height: 256px;
+    width: 300px;
+}
+.player h3{
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 40px;
+}
+.player p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+/* footer */
+.app{
+    background-color: #2d25a0;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    grid-gap:30px;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+.app-half {
+    align-items: center;
+  }
+.app-half h3 {
+    color: #fff;
+    margin-bottom: 27px;
+    margin-left: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .app-half a {
+    text-decoration: none;
+    background-color: #e02c6d;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+.app-half img{
+    width: 666px;
+    height: 375px;
+    margin-right: 20px;
+}
+.phone img:hover {
+    transform: scale(1.5);
+    transition: transform 1.5s;
+  }
+
+.app-half .icon{
+    position: absolute;
+    color: white;
+    margin-left: 12px;
+    width: 18px;
+    height: 25px;
+}
+
+
+/* copyright */
+.last-footer{
+    justify-content: center;
+    text-align: center;
+    margin: 158px auto;
+    padding: 20px;
+    width: 484px;
+    height: 213px;
+    position: relative;
+}
+
+.football .logo{
+    width: 438px;
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+.icons{
+    margin-bottom: 20px;
+}
+.icon{
+    width: 32px;
+}
+
+.copyright h5{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000000;
+}
+
+
+/* media query */
+@media (max-width:992px){
+    .top-players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .banner, app{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
+    }
+    .kick img{
+        width: 370px;
+        height: 292px;
+}
+}
+@media (max-width:668px){
+    .top-players, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .banner-half{
+        display: block;
+    }
+    .kick img{
+        width: 278px;
+        height: 219px;
+}
+}
